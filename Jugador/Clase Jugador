@@ -1,0 +1,61 @@
+package jugador;
+/**
+ *
+ * @author jrcm_
+ */
+public class Jugador {
+    int cedula;
+    int edad;
+    String nombre;
+    String apellido;
+
+    public Jugador(int cedula, String nombre, String apellido, int edad) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+    }
+
+    public int getCedula() {
+        return cedula;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    } 
+    
+    //Funciones
+    public void caminar() {
+        System.out.println("El jugador esta caminando");
+    }
+    public void correr() {
+        System.out.println("El jugador esta corriendo");
+    }
+    public void viajar() {
+        System.out.println("El jugador se encuantra viajando");
+    }
+}
