@@ -1,1 +1,17 @@
+package com.mycompany.taller_clase00_objetos;
 
+/**
+ *
+ * @author jrcm_
+ */
+import jugador.Jugador;
+
+public class Taller_clase00_objetos {
+
+    public static void main(String[] args) {
+        Jugador Miguel = new Jugador(1102795760, "Miguel", "Estrada", 34);
+        Miguel.correr();
+        String nombre = Miguel.getNombre();
+        System.out.println("el jugador " +nombre+ " esta corriendo");
+    }
+}
